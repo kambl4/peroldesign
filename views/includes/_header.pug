@@ -1,0 +1,60 @@
+.d-none.d-lg-block
+  header.vlt-header.vlt-header--fullscreen.vlt-header--opaque
+    .vlt-navbar.vlt-navbar--main.vlt-navbar--sticky.vlt-navbar--hide-on-scroll
+      .container
+        .vlt-navbar-inner
+          .vlt-navbar-inner--left
+            a.vlt-navbar-logo(href="/")
+              img.black(src="img/root/logo--default-black.png" alt="" style="height: 18px;")
+              img.white(src="img/root/logo--default-white.png" alt="" style="height: 18px;")
+          .vlt-navbar-inner--right
+            .d-flex.align-items-center
+              a.vlt-menu-burger(href="#")#vlt-fullscreen-menu-open
+                span.line.line-one
+                  span
+                span.line.line-two
+                  span
+                span.line.line-three
+                  span
+              //- a.vlt-menu-shop-cart(href="shop-cart.html")
+                i.leedo-paper-bag
+                span 0
+  .vlt-fullscreen-navigation-holder
+    .vlt-navbar.vlt-navbar--white-text-on-top
+      .container
+        .vlt-navbar-inner
+          .vlt-navbar-inner--left
+            a.vlt-navbar-logo(href="/")
+              img.black(src="img/root/logo--default-black.png" alt="" style="height: 18px;")
+              img.white(src="img/root/logo--default-white.png" alt="" style="height: 18px;")
+          .vlt-navbar-inner--right
+            a.vlt-menu-burger.vlt-menu-burger--opened(href="#")#vlt-fullscreen-menu-close
+              span.line.line-one
+                span
+              span.line.line-two
+                span
+              span.line.line-three
+                span
+  include ./_nav-desktop
+
+.d-lg-none.d-sm-block
+  header.vlt-header.vlt-header--opaque.vlt-header--mobile
+    nav.vlt-navbar.vlt-navbar--mobile
+      .container
+        .vlt-navbar-inner.no-gutters
+          .col.text-left
+            a.vlt-menu-burger(href="#")#vlt-mobile-menu-toggle
+              span.line.line-one
+                span
+              span.line.line-two
+                span
+              span.line.line-three
+                span
+          .col.text-center
+            a.vlt-navbar-logo(href="/")
+              img(src="img/root/logo--aside.png" alt="" style="height: 26px;")
+          .col.text-right
+            //- a.vlt-menu-shop-cart(href="shop-cart.html")
+              i.leedo-paper-bag
+              span 0
+  include ./_nav-mobile

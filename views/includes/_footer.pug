@@ -1,17 +1,46 @@
-footer.vlt-footer.vlt-footer--style-1.vlt-footer--fixed(style="padding: 70px 0 30px 0;")
+footer.vlt-footer.vlt-footer--widgetized.vlt-footer--fixed
   .container
-    .text-center
-      a.vlt-footer-logo(href="/")
-        img(src="img/logo-dark@2x.png" alt="" style="height: 120px;")
-      .vlt-footer-socials.vlt-footer-socials--style-1(style="margin-top: 0;")
-        a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
-          i.fa.fa-vk
-        a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
-          i.fa.fa-facebook
-        a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
-          i.fa.fa-instagram
-      .vlt-footer-copyright(style="margin-top: 30px; font-size: 10pt;")
-        p &lt;&sol;&gt; with 
-          span(style="color: #ee3364;") ❤ 
-          | by 
-          a(href="mailto:goo.kambl4@gmail.com") Tarasenko_PS
+    .vlt-footer-widgets
+      .row
+        .col-lg-4
+          .vlt-widget.vlt-widget--white.vlt-widget-text
+            h5.vlt-widget__title.vlt-widget__title--white Perol-Design
+            p Вы можете связаться со мной по телефону, электронной почте, Telegram или WhatsApp
+        .col-lg-3.offset-lg-1
+          .vlt-widget.vlt-widget--white.vlt-widget-nav-menu
+            h5.vlt-widget__title.vlt-widget__title--white Контакты
+            div
+              i.fa.fa-phone(style="font-size: 15pt; margin-right: 10px;")
+              a(href="tel:89992324379") 8 (999) 232-43-79
+            div(style="margin-top: 5px;")
+              i.fa.fa-envelope(style="font-size: 15pt; margin-right: 10px;")
+              a(href="mailto:sveta_91@bk.ru") sveta_91@bk.ru
+            //- ul.menu
+              li: a(href="#") Домой
+              li: a(href="#") Портфолио
+              li: a(href="#") Контакты
+        .col-lg-4
+          .vlt-widget.vlt-widget--white.vlt-widget-subscribe
+            h5.vlt-widget__title.vlt-widget__title--white Подписаться
+            form.vlt-subscribe-form.vlt-subscribe-form--style-3(action="")
+              .d-flex
+                input(type="email" placeholder="Ваш Email" name="EMAIL")
+                button.vlt-btn.vlt-btn--primary.vlt-btn--effect(type="submit")
+                  span Ok
+              .vlt-alert
+          .vlt-widget.vlt-widget--white.vlt-widget-html
+            //- a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+              i.fab.fa-vk
+            //- a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+              i.fab.fa-facebook
+            //- a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+              i.fab.fa-instagram
+            a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+              i.fab.fa-telegram-plane
+            a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+              i.fab.fa-whatsapp
+    .vlt-footer-copyright
+      p &lt;&sol;&gt; with 
+        span(style="color: #ee3364;") ❤ 
+        | by 
+        a(href="mailto:goo.kambl4@gmail.com") Tarasenko_PS
