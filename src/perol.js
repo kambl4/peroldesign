@@ -47,7 +47,7 @@ app.set('view engine', 'pug');
 // -----------------------------------------------------------
 mongoose.connect(process.env.MONGODB, { useNewUrlParser: true, useUnifiedTopology: true });
 db.on("error", console.error.bind(console, "Something wrong, my friend :("));
-db.once("open", () => { console.log("Landing DB Connection Succeeded"); });
+db.once("open", () => { console.log("PerolDesign DB Connection Succeeded"); });
 
 // -----------------------------------------------------------
 // Routes
