@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+
+	head
+		block title
+			title PerolDesign.
+
+		include ../includes/_head.pug
+
+	body
+		.vlt-site-preloader
+			.image
+				img(src="img/root/preloader.gif" alt="")
+
+		//- Navbar
+		include ../includes/_header.pug
+
+		.vlt-site-wrapper
+			.vlt-site-wrapper__inner
+				main.vlt-main
+					block content
+			
+			//- Footer
+			include ../includes/_footer.pug
+
+		//- Javascripts
+		include ../includes/_javascript.pug
+		
+		//- Page specific javascripts
+		block specific-js

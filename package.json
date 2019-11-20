@@ -1,0 +1,34 @@
+{
+  "name": "peroldesign",
+  "version": "1.0.0",
+  "description": "PerolDesign Portfolio",
+  "main": "src/perol.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js src/perol.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kambl4/peroldesign.git"
+  },
+  "author": "Tarasenko_PS <goo.kambl4@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kambl4/peroldesign/issues"
+  },
+  "homepage": "https://github.com/kambl4/peroldesign#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.12",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
