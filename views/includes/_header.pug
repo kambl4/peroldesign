@@ -5,8 +5,8 @@
         .vlt-navbar-inner
           .vlt-navbar-inner--left
             a.vlt-navbar-logo(href="/")
-              img.black(src="img/root/logo--default-black.png" alt="" style="height: 18px;")
-              img.white(src="img/root/logo--default-white.png" alt="" style="height: 18px;")
+              img.black(src="/img/logo-light@2x.png" alt="" style="height: 60px;")
+              img.white(src="/img/logo-dark@2x.png" alt="" style="height: 60px;")
           .vlt-navbar-inner--right
             .d-flex.align-items-center
               a.vlt-menu-burger(href="#")#vlt-fullscreen-menu-open
@@ -25,8 +25,8 @@
         .vlt-navbar-inner
           .vlt-navbar-inner--left
             a.vlt-navbar-logo(href="/")
-              img.black(src="img/root/logo--default-black.png" alt="" style="height: 18px;")
-              img.white(src="img/root/logo--default-white.png" alt="" style="height: 18px;")
+              img.black(src="/img/logo-light@2x.png" alt="" style="height: 60px;")
+              img.white(src="/img/logo-dark@2x.png" alt="" style="height: 60px;")
           .vlt-navbar-inner--right
             a.vlt-menu-burger.vlt-menu-burger--opened(href="#")#vlt-fullscreen-menu-close
               span.line.line-one
@@ -35,7 +35,8 @@
                 span
               span.line.line-three
                 span
-  include ./_nav-desktop
+    nav.vlt-fullscreen-navigation
+      include ./_menu-items
 
 .d-lg-none.d-sm-block
   header.vlt-header.vlt-header--opaque.vlt-header--mobile
@@ -52,9 +53,11 @@
                 span
           .col.text-center
             a.vlt-navbar-logo(href="/")
-              img(src="img/root/logo--aside.png" alt="" style="height: 26px;")
+              img(src="/img/logo-light@2x.png" alt="" style="height: 50px;")
           .col.text-right
             //- a.vlt-menu-shop-cart(href="shop-cart.html")
               i.leedo-paper-bag
               span 0
-  include ./_nav-mobile
+    nav.vlt-mobile-navigation
+      .container
+        include ./_menu-items

@@ -1,6 +1,9 @@
-doctype html
-html(lang="en")
+block variables
+	- var htmlClasses = 'no-js vlt-is--homepage-04 vlt-is--header-fullscreen vlt-is--footer-widgetized vlt-is--footer-fixed vlt-is--lowercase-mode'
 
+doctype html
+html(lang="en" class=htmlClasses)
+	
 	head
 		block title
 			title PerolDesign.
@@ -10,10 +13,11 @@ html(lang="en")
 	body
 		.vlt-site-preloader
 			.image
-				img(src="img/root/preloader.gif" alt="")
+				img(src="/img/root/preloader.gif" alt="")
 
 		//- Navbar
-		include ../includes/_header.pug
+		block header
+			include ../includes/_header.pug
 
 		.vlt-site-wrapper
 			.vlt-site-wrapper__inner
@@ -21,7 +25,8 @@ html(lang="en")
 					block content
 			
 			//- Footer
-			include ../includes/_footer.pug
+			block footer
+				include ../includes/_footer.pug
 
 		//- Javascripts
 		include ../includes/_javascript.pug

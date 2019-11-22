@@ -1,0 +1,115 @@
+extends layouts/_layout.pug
+
+block variables
+	- var htmlClasses = 'no-js vlt-is--about-me vlt-is--header-fullscreen vlt-is--footer-style-1 vlt-is--footer-fixed vlt-is--lowercase-mode'
+
+block title
+	title Обо мне - PerolDesign.
+
+block header
+	.d-none.d-lg-block
+		header.vlt-header.vlt-header--fullscreen
+			.vlt-navbar.vlt-navbar--main.vlt-navbar--transparent-always
+				.container
+					.vlt-navbar-inner
+						.vlt-navbar-inner--left
+							a.vlt-navbar-logo(href="/")
+								img.black(src="/img/logo-light@2x.png" alt="" style="height: 60px;")
+								img.white(src="/img/logo-dark@2x.png" alt="" style="height: 60px;")
+						.vlt-navbar-inner--right
+							.d-flex.align-items-center
+								a.vlt-menu-burger(href="#")#vlt-fullscreen-menu-open
+									span.line.line-one
+										span
+									span.line.line-two
+										span
+									span.line.line-three
+										span
+								//- a.vlt-menu-shop-cart(href="shop-cart.html")
+									i.leedo-paper-bag
+									span 0
+		.vlt-fullscreen-navigation-holder
+			.vlt-navbar.vlt-navbar--white-text-on-top
+				.container
+					.vlt-navbar-inner
+						.vlt-navbar-inner--left
+							a.vlt-navbar-logo(href="/")
+								img.black(src="/img/logo-light@2x.png" alt="" style="height: 60px;")
+								img.white(src="/img/logo-dark@2x.png" alt="" style="height: 60px;")
+						.vlt-navbar-inner--right
+							a.vlt-menu-burger.vlt-menu-burger--opened(href="#")#vlt-fullscreen-menu-close
+								span.line.line-one
+									span
+								span.line.line-two
+									span
+								span.line.line-three
+									span
+			nav.vlt-fullscreen-navigation
+				include ./includes/_menu-items
+
+	.d-lg-none.d-sm-block
+		header.vlt-header.vlt-header--opaque.vlt-header--mobile
+			nav.vlt-navbar.vlt-navbar--mobile
+				.container
+					.vlt-navbar-inner.no-gutters
+						.col.text-left
+							a.vlt-menu-burger(href="#")#vlt-mobile-menu-toggle
+								span.line.line-one
+									span
+								span.line.line-two
+									span
+								span.line.line-three
+									span
+						.col.text-center
+							a.vlt-navbar-logo(href="/")
+								img(src="/img/logo-light@2x.png" alt="" style="height: 50px;")
+						.col.text-right
+							//- a.vlt-menu-shop-cart(href="shop-cart.html")
+								i.leedo-paper-bag
+								span 0
+			nav.vlt-mobile-navigation
+				.container
+					include ./includes/_menu-items
+
+block content
+	section
+		.container
+			.row.no-gutters
+				.col-md-6.d-flex.flex-column.justify-content-center.min-vh-100
+					.vlt-particle(data-jarallax-element="0 0" style="top: -40px; right: -90px; max-width: 250px;")
+						img(src="/img/root/particle-01--black.png" alt="")
+					.vlt-gap-120
+					.vlt-custom--8511
+						.vlt-animation-block(data-aos="fade" data-aos-delay="0")
+							h4.vlt-third-font.vlt-fourth-color.vlt-custom--9503.d-inline-block.position-relative.font-italic.font-weight-bold.m-0
+								| Светлана Пероль
+						.vlt-gap-30
+						.vlt-animation-block(data-aos="fade" data-aos-delay="100")
+							h3.vlt-fourth-color.m-0
+								| Привет! Я дизайнер :)
+						.vlt-gap-30
+						.vlt-animation-block(data-aos="fade" data-aos-delay="200")
+							p Тут надо придумать пару слов о себе или вообще о том кто такой Дизайнер и как сними работать :)
+						.vlt-gap-40
+						.vlt-animation-block(data-aos="fade" data-aos-delay="300")
+							.vlt-social-icons.text-left
+								a.vlt-social-icon.vlt-social-icon--style-4.facebook(href="#" target="_blank")
+									i.fab.fa-facebook
+								a.vlt-social-icon.vlt-social-icon--style-4.twitter(href="#" target="_blank")
+									i.fab.fa-twitter
+								a.vlt-social-icon.vlt-social-icon--style-4.dribbble(href="#" target="_blank")
+									i.fab.fa-dribbble
+								a.vlt-social-icon.vlt-social-icon--style-4.behance(href="#" target="_blank")
+									i.fab.fa-behance
+								a.vlt-social-icon.vlt-social-icon--style-4.pinterest(href="#" target="_blank")
+									i.fab.fa-pinterest
+								a.vlt-social-icon.vlt-social-icon--style-4.instagram(href="#" target="_blank")
+									i.fab.fa-instagram
+					.vlt-gap-120
+				.col-md-6.d-none.d-md-block
+					.min-vh-100.jarallax.vlt-stretch-element-inside-column
+						img.jarallax-img(src="/images/about-portrait.jpg" alt="")
+
+block footer
+
+block specific-js

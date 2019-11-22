@@ -1,0 +1,41 @@
+extends layouts/_layout.pug
+
+block variables
+	- var htmlClasses = 'no-js vlt-is--page-404 vlt-is--header-default vlt-is--footer-style-1 vlt-is--footer-fixed vlt-is--lowercase-mode'
+
+block title
+	title 404 - PerolDesign.
+
+block content
+	section
+		.vlt-particle(data-jarallax-element="-100 0" style="top: 40%; left: -100px; max-width: 310px;")
+			img(src="/img/root/particle-01--black.png" alt="")
+		.vlt-particle(data-jarallax-element="100 0" style="bottom: -150px; right: -150px; max-width: 300px;")
+			img(src="/img/root/particle-02.png" alt="")
+		.container
+			.row
+				.col-lg-6.offset-lg-3
+					.vlt-page-404
+						strong 404
+						h1 Страница не найдена.
+						p Запрашиваемая страница перемещена или удалена.
+						a.vlt-btn.vlt-btn--primary.vlt-btn--lg.vlt-btn--effect(href="/" target="_self")
+							span На главную
+block footer
+	footer.vlt-footer.vlt-footer--style-1.vlt-footer--fixed
+		.container
+			.text-center
+				a.vlt-footer-logo(href="index.html")
+					img(src="/img/logo-dark@2x.png" alt="" style="height: 100px;")
+				.vlt-footer-socials.vlt-footer-socials--style-1(style="margin: 0;")
+					a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+						i.fab.fa-telegram-plane
+					a.vlt-social-icon.vlt-social-icon--style-2(href="#" target="_blank")
+						i.fab.fa-whatsapp
+				.vlt-footer-copyright(style="font-size: 10pt; margin-top: 20px;")
+					p &lt;&sol;&gt; with 
+						span(style="color: #ee3364;") ❤ 
+						| by 
+						a(href="mailto:goo.kambl4@gmail.com") Tarasenko_PS
+block specific-js
+	
