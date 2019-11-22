@@ -1,0 +1,141 @@
+extends layouts/_layout.pug
+
+block variables
+	- var htmlClasses = 'no-js vlt-is--contact-us-02 vlt-is--header-fullscreen vlt-is--footer-widgetized vlt-is--footer-fixed vlt-is--lowercase-mode'
+
+block title
+	title Контакты - PerolDesign.
+
+block header
+	.d-none.d-lg-block
+		header.vlt-header.vlt-header--fullscreen
+			.vlt-navbar.vlt-navbar--main.vlt-navbar--transparent.vlt-navbar--sticky.vlt-navbar--hide-on-scroll.vlt-navbar--white-text-on-top
+				.container
+					.vlt-navbar-inner
+						.vlt-navbar-inner--left
+							a.vlt-navbar-logo(href="/")
+								img.black(src="/img/logo-light@2x.png" alt="" style="height: 60px;")
+								img.white(src="/img/logo-dark@2x.png" alt="" style="height: 60px;")
+						.vlt-navbar-inner--right
+							.d-flex.align-items-center
+								a.vlt-menu-burger(href="#")#vlt-fullscreen-menu-open
+									span.line.line-one
+										span
+									span.line.line-two
+										span
+									span.line.line-three
+										span
+								//- a.vlt-menu-shop-cart(href="shop-cart.html")
+									i.leedo-paper-bag
+									span 0
+		.vlt-fullscreen-navigation-holder
+			.vlt-navbar.vlt-navbar--white-text-on-top
+				.container
+					.vlt-navbar-inner
+						.vlt-navbar-inner--left
+							a.vlt-navbar-logo(href="/")
+								img.black(src="/img/logo-light@2x.png" alt="" style="height: 60px;")
+								img.white(src="/img/logo-dark@2x.png" alt="" style="height: 60px;")
+						.vlt-navbar-inner--right
+							a.vlt-menu-burger.vlt-menu-burger--opened(href="#")#vlt-fullscreen-menu-close
+								span.line.line-one
+									span
+								span.line.line-two
+									span
+								span.line.line-three
+									span
+			nav.vlt-fullscreen-navigation
+				include ./includes/_menu-items
+
+	.d-lg-none.d-sm-block
+		header.vlt-header.vlt-header--opaque.vlt-header--mobile
+			nav.vlt-navbar.vlt-navbar--mobile
+				.container
+					.vlt-navbar-inner.no-gutters
+						.col.text-left
+							a.vlt-menu-burger(href="#")#vlt-mobile-menu-toggle
+								span.line.line-one
+									span
+								span.line.line-two
+									span
+								span.line.line-three
+									span
+						.col.text-center
+							a.vlt-navbar-logo(href="/")
+								img(src="/img/logo-light@2x.png" alt="" style="height: 50px;")
+						.col.text-right
+							//- a.vlt-menu-shop-cart(href="shop-cart.html")
+								i.leedo-paper-bag
+								span 0
+			nav.vlt-mobile-navigation
+				.container
+					include ./includes/_menu-items
+
+block content
+	<section class="jarallax"><img class="jarallax-img" src="/images/contacts-bg.jpg" alt="">
+		<div class="vlt-gap-170"></div>
+		<div class="container">
+			<!--Large Heading-->
+			<h1 class="vlt-large-heading text-center" style="color:#fff;">Контакты<span>.</span>
+			</h1>
+		</div>
+		<div class="vlt-gap-170"></div>
+	</section>
+	<!--Contact Us 02-->
+	<section>
+		<div class="container">
+			<div class="vlt-gap-120"></div>
+			<div class="row">
+				<div class="col-md-5">
+					<!--Animation Block-->
+					<div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
+						<!--Section Title-->
+						<div class="vlt-section-title text-left">
+							<h2>Get in Touch.
+							</h2>
+							<p>Above creature the rule blessed brought. Multiply they're one. Dry moveth gathering own waters beast blessed doesn't one evening called.
+							</p>
+						</div>
+					</div>
+					<div class="vlt-gap-40"></div>
+					<!--Animation Block-->
+					<div class="vlt-animation-block" data-aos="fade" data-aos-delay="100">
+						<ul class="vlt-contact-info">
+							<li><strong>Address:</strong> 10111 Santa Monica Boulevard, LA</li>
+							<li><strong>Phone:</strong> <a href="tel:44987065908">+44 987 065 908</a></li>
+							<li><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></li>
+							<li><strong>Fax:</strong> +44 987 065 909</li>
+						</ul>
+					</div>
+					<div class="vlt-gap-60--sm"></div>
+				</div>
+				<div class="col-md-6 offset-md-1">
+					<!--Animation Block-->
+					<div class="vlt-animation-block" data-aos="fade" data-aos-delay="100">
+						<!--Contact Form-->
+						<form class="vlt-contact-form" id="reused_form" method="post">
+							<div class="vlt-form-group">
+								<input class="vlt-form-control" type="text" placeholder="Your Name" name="your-name" size="40" required>
+							</div>
+							<div class="vlt-form-group">
+								<input class="vlt-form-control" type="email" placeholder="Your Email" name="your-email" size="40" required>
+							</div>
+							<div class="vlt-form-group">
+								<input class="vlt-form-control" type="text" placeholder="Your Title" name="your-title" size="40">
+							</div>
+							<div class="vlt-form-group">
+								<textarea class="vlt-form-control" cols="40" rows="4" placeholder="Your Message" name="your-message"></textarea>
+							</div>
+							<!--Button-->
+							<button class="vlt-btn vlt-btn--primary vlt-btn--lg vlt-btn--effect"><span>Send Message</span></button>
+							<div id="success_message" style="display: none;">Success!</div>
+							<div id="error_message" style="display: none;">Error!</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="vlt-gap-120"></div>
+		</div>
+	</section>
+
+block specific-js
